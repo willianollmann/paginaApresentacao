@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.topo {
+    height: 200px;
+    background: rgba(135, 206, 235, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.logo {
+    padding-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+.logo img {
+    width: 125px;
+    height: 125px;
+}
+.frase {
+    width: 500px;
+    text-align: center;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding-top: 70px;
+    margin: auto;
+}
+.menu {
+    background: rgb(51, 51, 51);
+    overflow: hidden;
+    top: 200px;
+    position: sticky; 
+}
+.menu a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    float: left;
+}
+.menu a:hover {
+    color: black;
+    background: rgb(135, 206, 235);
+}
+span {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: white;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 11px;
+    float: left;
+}
+span:hover {
+    color: rgb(135, 206, 235);
+}
+.pesquisa {
+    float: right;
+    padding: 12px;
+    margin-top: 2.5px;
+    margin-right: 2px;
+    border: 1px solid rgb(242,242,242);
+    border-radius: 5px;
+}
+.submenu {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    padding-top: 60px;
+    background: black;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.submenu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(129, 129, 129);
+    display: block;
+    padding: 8px 8px 8px 32px;
+}
+.submenu a:hover {
+    color: rgb(135, 206, 235);
+}
+.fundo {
+    background: rgba(240, 248, 255);
+    width: 1000px;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-radius: 30px;
+}
+.conteudo {
+    padding-left: 20px;
+    padding-right: 20px;    
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+.imagens img{
+    border: solid;
+    width: 200x;
+    height: 200px;
+    padding: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.fundo1 {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.aumentar_img {
+    animation-name: aumentar;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes aumentar {
+    from{transform: scale(0); margin-left: 33%; margin-top: 10%;}
+    to{transform: scale(1); margin-left: 33%; margin-top: 10%;}
+}
+.fechar {
+    right: 25px;   
+    top: 0;
+    position: absolute;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.rodape {
+	background: rgba(135, 206, 235, 0.9);
+	text-align: center;
+	color: black;
+	padding: 10px;
+}

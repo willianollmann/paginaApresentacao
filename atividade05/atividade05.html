@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 05 - Aplicação WEB</title>
+    <link rel="stylesheet" type="text/css" href="completa.css">
+    <script type="text/javascript">
+        function diminuir(tag) {
+            var fundo1 = document.getElementById("fundo1");
+            fundo1.style.display = "none";
+        }
+        function aumentar(tag) {
+            var img = document.getElementById("foto");
+            var fundo1 = document.getElementById("fundo1");
+            fundo1.style.display = "block";
+            img.src = tag.src;
+            img.classList.add("aumentar_img");
+        }
+        function abrir() {
+            var menu = document.getElementById("submenu");
+            menu.style.width = "260px";
+        }
+        function fechar(){
+            var menu = document.getElementById("submenu");
+            menu.style.width = "0px";
+        }
+    </script>
+</head>
+<body>
+    <div class="topo">
+        <div class="logo"><img src="trivial.png">
+        </div>
+        <div class="frase">
+            Um Pouco Mais Sobre Mim...
+        </div>    
+    </div>
+    <div id="menu" class="menu">
+        <span onclick="abrir()">&#9776 Menu</span>
+        <a href="#">Link</a>
+        <a href="falecomigo.html" target="_blank">Fale Comigo</a>
+        <input type="search" placeholder="pesquisar..." class="pesquisa">
+    </div>
+    <div id="submenu" class="submenu">
+        <a href="#" class="fechar" onclick="fechar()">&times</a>
+        <a href="#">Opção 1</a>
+        <a href="#">Opção 2</a>
+        <a href="#">Opção 3</a>
+        <a href="#">Opção 4</a>
+    </div>
+        <div class="fundo">
+            <div class="conteudo">
+                <a><h1>Quem Sou Eu</h1></a>
+                <p>
+                    Meu nome é Willian Henrique Ollmann, tenho 34 anos, nasci e moro na cidade de Chapecó, estado de Santa Catarina. Sou filho de Rubens Nestor Ollmann e Elvira Ollmann. Sou casado com a Werlise Fassbinder Ollmann há 5 anos e não temos filhos. 
+                    Sempre gostei e quis ingressar na área de tecnologia, mas por dificuldades pessoais isso não foi possível até o momento. Por isso, atualmente, estudo Programação WEB no IFPA e cursos do YouTube.
+                </p>
+                <a><h1>Meus Hobbies</h1></a>
+                <p>
+                    Meus hobbies são cozinhar, praticar musculação, ver filmes ou seriados diversos e escutar músicas dos anos 70, 80 e 90.
+                </p>
+                    <div class="imagens">
+                        <img src="chef.png" onclick="aumentar(this)">   
+                        <img src="gym.png" onclick="aumentar(this)">
+                        <img src="watching-tv.png" onclick="aumentar(this)">
+                        <img src="sofa.png" onclick="aumentar(this)">
+                    </div>
+                <a><h1>Minha Comida Favorita</h1></a>
+                <p>
+                    Adoro o legítimo pão de queijo mineiro (receita caseira). Especial para o lanche da tarde ou jantar, sempre acompanhado de um café fresquinho passado na hora. Quem também gosta, quer experimentar e tem vontade de comer pão de queijo, não tem mais desculpa para não fazê-lo!
+                    Esta receita caseira é simplesmente maravilhosa. Arrisque-se!
+                <h3>Ingredientes</h3>
+                    <ul>
+                        <li>4 copos de polvilho doce</li>
+                        <li>2 copos de água</li>
+                        <li>1 copo de leite integral</li>
+                        <li>1/2 copo de óleo</li>
+                        <li>5 ovos</li>
+                        <li>400g de queijo ralado (parmesão e minas meia cura)</li>
+                        <li>sal</li>
+                    </ul>
+                <h3>Modo de Preparo</h3>
+                    <ol>
+                        <li>Coloque o leite, a água e o óleo juntamente com o sal para ferver. Depois, despeje sobre o polvilho e misture bem.</li>
+                        <li>Junte os ovos, aos poucos, para que fique uma massa mais ou menos mole (ainda grudando nas mãos).</li>
+                        <li>Sove bastante para desfazer todas as bolinhas brancas do polvilho escaldado.</li>
+                        <li>Junte o queijo até dar o ponto de enrolar.</li>
+                        <li>Faça bolinhas pequenas e asse em forno pré-aquecido a 200º.</li>
+                        <li>Se preferir não assar todas as bolinhas, pode armazená-las por até 3 meses no freezer.</li>
+                    </ol>
+                        <div class="imagens">
+                            <img src="paodequeijo2.png" onclick="aumentar(this)"> 
+                        </div>    
+                </p>
+                <div id="fundo1" class="fundo1">
+                    <img id="foto" onclick="diminuir(this)">
+                </div>
+            </div>
+        </div>
+<div class="rodape">
+    Aplicação Completa v1.0
+</div>
+</body>
+</html>
